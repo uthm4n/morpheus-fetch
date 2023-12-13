@@ -1,10 +1,6 @@
 var jp = require('jsonpath');
-const https = require("https");
 
 const options = {
-    agent: new https.Agent({
-        rejectUnauthorized: false
-    }),
     method: 'GET',
     headers: {
       Authorization: 'Bearer {MORPHEUS-API-TOKEN}'
